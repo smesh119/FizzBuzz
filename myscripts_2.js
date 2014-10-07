@@ -15,8 +15,7 @@ $(document).ready(function() {
     			else if (i%5===0) {
             	$(".listitemsadded").append("<li>Buzz</li>");
        			}
-      			else {
-    			console.log(i);
+      			else { $(".listitemsadded").append("<li>" + i + "</li>");
        		 	}
        	}	 	
 	}	
