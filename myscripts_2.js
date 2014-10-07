@@ -13,7 +13,7 @@ $(document).ready(function() {
                 } else if (i % 5 === 0) {
                     $(".listitemsadded").append("<li>Buzz</li>");
                 } else {
-                    $(".listitemsadded").append("<li>" + input + "</li>");
+                    $(".listitemsadded").append("<li>" + i + "</li>");
                 }
             }
         }
