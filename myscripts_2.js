@@ -6,7 +6,7 @@ $(document).ready(function() {
 			var i = $("input[name=inputvalue]").val();
 		
 		for(i=1; i<=100; i++) {
-				if (i%15===0){
+				if (i%3 === 0 && i%5 === 0){
             	$(".listitemsadded").append("<li>FizzBuzz</li>");
             	}
     			else if (i%3===0){
@@ -23,9 +23,14 @@ $(document).ready(function() {
 });
 
 	/* 2. when user types into input, remove prompt text*/
-	$(".query").on("focus", function(e){
-        $(".query").val("")
+	$(".query").on("click", function(e){
+        $(".query").val("");
     });
+
+    $("button").on("click", function(e) {
+    	$("li").remove();
+    });
+
 
 	/* 3. When user puts new text in input and hits enter, on keyup remove their input*/
     $(".query").keyup(function(e){

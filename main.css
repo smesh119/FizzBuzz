@@ -17,7 +17,16 @@ input {
 
 
 li {
-	
 	margin: 0;
 	padding: 0;
+}
+
+button{
+
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.listitemsadded {
+	margin-left: 15px;
 }
