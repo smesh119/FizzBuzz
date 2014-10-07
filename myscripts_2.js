@@ -3,9 +3,9 @@ $(document).ready(function() {
 	/* 1. INPUT SECTION on keydown*/
 	$(".query").keydown(function(e){
 		if(e.which == 13){
-			var i = $("input[name=inputvalue]").val();
+			var input = $("input[name=inputvalue]").val();
 		
-		for(i=1; i<=100; i++) {
+		for(i=1; i<=input; i++) {
 				if (i%3 === 0 && i%5 === 0){
             	$(".listitemsadded").append("<li>FizzBuzz</li>");
             	}
@@ -15,7 +15,7 @@ $(document).ready(function() {
     			else if (i%5===0) {
             	$(".listitemsadded").append("<li>Buzz</li>");
        			}
-      			else { $(".listitemsadded").append("<li>" + i + "</li>");
+      			else { $(".listitemsadded").append("<li>" + input + "</li>");
        		 	}
        	}	 	
 	}	
