@@ -7,7 +7,7 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
-            for (i = 1; i <= input &&i<=100; i++) {
+            for (i = 1; i <= input && i<=100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
                     $(".listitemsadded").append("<li>FizzBuzz</li>");
                 } else if (i % 3 === 0) {
