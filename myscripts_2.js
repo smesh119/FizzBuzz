@@ -4,6 +4,8 @@ $(document).ready(function() {
     $(".query").keydown(function(e) {
         if (e.which == 13) {
             var input = $("input[name=inputvalue]").val();
+            $("li").remove();
+            var i;
 
             for (i = 1; i <= input; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
