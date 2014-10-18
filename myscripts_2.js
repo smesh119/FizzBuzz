@@ -22,6 +22,7 @@ $(document).ready(function() {
                     break
                 } else {
                     $(".listitemsadded").append("<li>" + i + "</li>");
+                }    
             }
         }
     });
