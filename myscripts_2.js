@@ -18,8 +18,6 @@ $(document).ready(function() {
                     $(".listitemsadded").append("<li>Fizz</li>");
                 } else if (i % 5 === 0) {
                     $(".listitemsadded").append("<li>Buzz</li>");
-                } else if (i % 1 != 0) {
-                    break
                 } else {
                     $(".listitemsadded").append("<li>" + i + "</li>");
                 }    
