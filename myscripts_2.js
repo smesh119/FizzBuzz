@@ -7,9 +7,9 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
-            while(isNaN(num) || num % 1 != 0) {
+            /*if (i === NaN) {
                 alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
-            }; 
+            } */
             
             for (i = 1; i <= input && i<=100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
