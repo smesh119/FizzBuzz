@@ -8,8 +8,8 @@ $(document).ready(function() {
             var i;
 
             if (i % 1 != 0) {
-                alert("Don't use numbers with decimals or words");
-            };
+                alert("Don't use numbers with decimals or words")
+            }
 
             for (i = 1; i <= input && i<=100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
