@@ -9,7 +9,7 @@ $(document).ready(function() {
 
             if (i % 1 != 0) {
                 alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
-            }
+            } else (
 
             for (i = 1; i <= input && i<=100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
                 } else {
                     $(".listitemsadded").append("<li>" + i + "</li>");
                 }
-            }
+            })
         }
     });
 
