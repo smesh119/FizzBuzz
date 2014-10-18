@@ -7,7 +7,7 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
-            if (i % 1 === 0) {
+            if (i % 1 != 0) {
                 alert("Don't use numbers with decimals or words");
             };
 
