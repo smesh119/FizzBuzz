@@ -7,7 +7,7 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
-            if (i % 1 != 0) {
+            if (i === NaN) {
                 alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
             } 
 
