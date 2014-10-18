@@ -7,6 +7,10 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
+            if (i % 1 === 0) {
+                prompt ("Don't use numbers with decimals or words")
+            };
+
             for (i = 1; i <= input && i<=100; i++) {
                 if (i % 3 === 0 && i % 5 === 0) {
                     $(".listitemsadded").append("<li>FizzBuzz</li>");
