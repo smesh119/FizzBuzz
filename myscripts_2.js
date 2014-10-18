@@ -10,17 +10,20 @@ $(document).ready(function() {
             /*if (i === NaN) {
                 alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
             } */
-            
-            for (i = 1; i <= input && i<=100; i++) {
-                if (i % 3 === 0 && i % 5 === 0) {
-                    $(".listitemsadded").append("<li>FizzBuzz</li>");
-                } else if (i % 3 === 0) {
-                    $(".listitemsadded").append("<li>Fizz</li>");
-                } else if (i % 5 === 0) {
-                    $(".listitemsadded").append("<li>Buzz</li>");
-                } else {
-                    $(".listitemsadded").append("<li>" + i + "</li>");
-                }    
+            if (i >=1 && i<=100) {
+                for (i = 1; i <= input && i<=100; i++) {
+                    if (i % 3 === 0 && i % 5 === 0) {
+                        $(".listitemsadded").append("<li>FizzBuzz</li>");
+                    } else if (i % 3 === 0) {
+                        $(".listitemsadded").append("<li>Fizz</li>");
+                    } else if (i % 5 === 0) {
+                        $(".listitemsadded").append("<li>Buzz</li>");
+                    } else {
+                        $(".listitemsadded").append("<li>" + i + "</li>");
+                    }    
+                }
+            } else {
+                alert("Please input a number between 1 and 100 only.")
             }
         }
     });
