@@ -10,7 +10,7 @@ $(document).ready(function() {
             /*if (i === NaN) {
                 alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
             } */
-            if (i >=1 && i<=100) {
+            if (i >=1 && i<=100 && i % 1 ===0) {
                 for (i = 1; i <= input && i<=100; i++) {
                     if (i % 3 === 0 && i % 5 === 0) {
                         $(".listitemsadded").append("<li>FizzBuzz</li>");
