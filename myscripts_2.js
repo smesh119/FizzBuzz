@@ -8,7 +8,7 @@ $(document).ready(function() {
             var i;
 
             if (i % 1 != 0) {
-                alert("Don't use numbers with decimals or words")
+                alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
             }
 
             for (i = 1; i <= input && i<=100; i++) {
