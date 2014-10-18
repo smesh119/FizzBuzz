@@ -7,11 +7,7 @@ $(document).ready(function() {
             $("li").remove();
             var i;
 
-            /*if (i === NaN) {
-                alert("The FizzBuzz game only works with numbers. No decimals or words allowed!")
-            } */
-            
-                for (i = 1; i <= input && i<=100; i++) {
+             for (i = 1; i <= input && i<=100; i++) {
                     if (i % 3 === 0 && i % 5 === 0) {
                         $(".listitemsadded").append("<li>FizzBuzz</li>");
                     } else if (i % 3 === 0) {
@@ -22,7 +18,7 @@ $(document).ready(function() {
                         $(".listitemsadded").append("<li>" + i + "</li>");
                     }    
                 }
-            } 
+            
         }
     });
 
