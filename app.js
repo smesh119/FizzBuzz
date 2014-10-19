@@ -7,10 +7,10 @@ $(document).ready(function() {
             var i;
 
             if(isNaN(input)) {
-			alert('Please supply a number!');
+			alert('Please supply a number! No words allowed.');
 		}
 		else if(input %1 != 0) {
-			alert('Please supply an integer');
+			alert('Please supply an integer. No decimals allowed!');
 		}
 		else { 
 			for (i = 1; i <= input && i<=100; i++) {
